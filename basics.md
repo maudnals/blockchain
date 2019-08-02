@@ -2,16 +2,16 @@
 Arbitrary number than can be used only once
 
 ### Proof Of Work:
-Blockchain is a decentralized database, so it needs to be secured by properly incentivizing participants in the network.
+Blockchain is a decentralized database, so it needs to be secured by incentivizing participants in the network.
 
 This means:
-- financially rewarding participants that facilitate the goals of the network
-- making attackers waste money when they attack the network. 
+- reward participants that facilitate the goals of the network
+- make attackers waste money. 
 
 And securing the network this way is the job of the consensus algorithm. 
 2 types of consensus algorithms:
-- proof of stake
-- proof of work   
+- proof of stake PoS
+- proof of work PoW  
 
 A miner:  
 - verifies transactions 
