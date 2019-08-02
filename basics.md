@@ -1,7 +1,7 @@
-#### Nonce:
+### Nonce:
 Arbitrary number than can be used only once
 
-#### Proof Of Work:
+### Proof Of Work:
 Blockchain is a decentralized database, so it needs to be secured by properly incentivizing participants in the network.
 
 This means:
@@ -20,10 +20,10 @@ A miner:
 
 // to be continued
 
-#### Consensus algorithm: 
+### Consensus algorithm: 
 A process in computer science used to achieve agreement on a single data value among distributed systems.
 
-#### Sources
+### Sources
 ++++ https://medium.com/@julianrmartinez43/understanding-proof-of-work-part-1-586d7ee6b014
 ++++ https://lisk.io/academy/blockchain-basics/how-does-blockchain-work/proof-of-work 
 
