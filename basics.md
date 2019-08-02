@@ -11,19 +11,17 @@ Blockchain is a decentralized database, so it needs to be secured by properly in
 
 This means:
 - financially rewarding participants that facilitate the goals of the network
-- making attackers waste money when they attack the network.
-
+- making attackers waste money when they attack the network.  
 And securing the network this way is the job of the consensus algorithm. 
 There are several types of consensus algorithms:
 - proof of stake
-- proof of work
+- proof of work   
 
-Note: there's a tradeoff speed-security: how do defend the network from attackers while maintaining a certain level of transaction speed for their users?
+Note: there's a tradeoff speed-security: how do defend the network from attackers while maintaining a certain level of transaction speed for their users?  
 
-What miners do:
-aka what solving a block really looks like
-A miner:
-- verifies transactions
+What miners do, aka what solving a block really looks like.  
+A miner:  
+- verifies transactions 
 - organizes these transactions into a block
 - distributes completed blocks (already solved) throughout the network, this happens very quickly and is not energy intensive. What is energy intensive is the “lottery system” or “puzzle” that miners need to solve in order to create a valid block.
 
