@@ -1,7 +1,9 @@
 
+#### Truffle 
+Tooling suite for smart contracts
+
 #### Ganache
 A local in-memory∴ blockchain, useful to test locally.  
-
 ∴ in-memory DB: DB management system that primarily stores in the main memory (as opposed to disk); faster.
 
 #### Metamask
