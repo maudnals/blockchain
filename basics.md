@@ -1,8 +1,3 @@
-Questions:
-- mining (= add a transaction onto the blockchain) vs token creation
-- block content
-
-
 #### Nonce:
 Arbitrary number than can be used only once
 
@@ -30,6 +25,12 @@ A miner:
 #### Consensus algorithm: 
 A process in computer science used to achieve agreement on a single data value among distributed systems.
 
-
+#### Sources
 ++++ https://medium.com/@julianrmartinez43/understanding-proof-of-work-part-1-586d7ee6b014
-++++ https://lisk.io/academy/blockchain-basics/how-does-blockchain-work/proof-of-work
+++++ https://lisk.io/academy/blockchain-basics/how-does-blockchain-work/proof-of-work 
+
+
+
+Questions:
+- mining (= add a transaction onto the blockchain) vs token creation
+- block content
