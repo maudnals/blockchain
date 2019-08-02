@@ -3,10 +3,10 @@ Questions:
 - block content
 
 
-Nonce:
+#### Nonce:
 Arbitrary number than can be used only once
 
-Proof Of Work:
+#### Proof Of Work:
 Blockchain is a decentralized database, so it needs to be secured by properly incentivizing participants in the network.
 
 This means:
@@ -27,7 +27,9 @@ A miner:
 - organizes these transactions into a block
 - distributes completed blocks (already solved) throughout the network, this happens very quickly and is not energy intensive. What is energy intensive is the “lottery system” or “puzzle” that miners need to solve in order to create a valid block.
 
-Consensus algorithm: 
+// to be continued
+
+#### Consensus algorithm: 
 A process in computer science used to achieve agreement on a single data value among distributed systems.
 
 
