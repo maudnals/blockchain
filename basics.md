@@ -6,13 +6,12 @@ Blockchain is a decentralized database, so it needs to be secured by properly in
 
 This means:
 - financially rewarding participants that facilitate the goals of the network
-- making attackers waste money when they attack the network.  
+- making attackers waste money when they attack the network. 
+
 And securing the network this way is the job of the consensus algorithm. 
-There are several types of consensus algorithms:
+2 types of consensus algorithms:
 - proof of stake
 - proof of work   
-
-Note: there's a tradeoff speed-security: how do defend the network from attackers while maintaining a certain level of transaction speed for their users?  
 
 A miner:  
 - verifies transactions 
@@ -29,7 +28,10 @@ A process in computer science used to achieve agreement on a single data value a
 ++++ https://lisk.io/academy/blockchain-basics/how-does-blockchain-work/proof-of-work 
 
 
+------- 
 
 Questions:
 - mining (= add a transaction onto the blockchain) vs token creation
 - block content
+
+Note: there's a tradeoff speed-security: how do defend the network from attackers while maintaining a certain level of transaction speed for their users?  
