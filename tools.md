@@ -1,6 +1,6 @@
 
 #### Ganache
-Local in-memory blockchain
+A local in-memory blockchain, useful to test locally.
 
 #### Metamask
 "an Ethereum Wallet in your Browser".   
