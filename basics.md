@@ -14,7 +14,6 @@ There are several types of consensus algorithms:
 
 Note: there's a tradeoff speed-security: how do defend the network from attackers while maintaining a certain level of transaction speed for their users?  
 
-What miners do, aka what solving a block really looks like.  
 A miner:  
 - verifies transactions 
 - organizes these transactions into a block
