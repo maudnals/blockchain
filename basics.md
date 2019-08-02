@@ -1,5 +1,5 @@
 ### Nonce:
-Arbitrary number than can be used only once
+Arbitrary number than can be used only once.
 
 ### Proof Of Work:
 Blockchain is a decentralized database, so it needs to be secured by incentivizing participants in the network.
