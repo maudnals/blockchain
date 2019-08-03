@@ -32,9 +32,12 @@ How: it's executed by the Ethereum Virtual Machine (EVM).
 What: it's usually written in Solidity. 
 
 ### Sources
+
 ++++ https://medium.com/@julianrmartinez43/understanding-proof-of-work-part-1-586d7ee6b014
 ++++ https://lisk.io/academy/blockchain-basics/how-does-blockchain-work/proof-of-work 
 +++ https://cointelegraph.com/explained/proof-of-work-explained
+https://blog.goodaudience.com/how-a-miner-adds-transactions-to-the-blockchain-in-seven-steps-856053271476#92ef
+
 ------- 
 
 Questions:
