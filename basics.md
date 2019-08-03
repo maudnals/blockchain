@@ -24,7 +24,7 @@ A miner:
 ### Consensus algorithm: 
 A process in computer science, used to achieve agreement on a single data value among distributed systems.
 
-### Smart contracts
+### Smart contracts:
 A smart contract is a piece of code that:
 - executes the business logic of a dApp
 - aka is responsible for reading and writing data to the blockchain
@@ -34,7 +34,7 @@ What: it's usually written in Solidity.
 ### Sources
 ++++ https://medium.com/@julianrmartinez43/understanding-proof-of-work-part-1-586d7ee6b014
 ++++ https://lisk.io/academy/blockchain-basics/how-does-blockchain-work/proof-of-work 
-
++++ https://cointelegraph.com/explained/proof-of-work-explained
 ------- 
 
 Questions:
