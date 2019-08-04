@@ -1,3 +1,24 @@
+#### Blockchain:
+A blockchain is a decentralized, immutable database.   
+
+ is a growing list of records, called blocks, that are linked using cryptography.[1][6] Each block contains a cryptographic hash of the previous block,[6] a timestamp, and transaction data (generally represented as a Merkle tree).
+ 
+ 
+decentralized  
+P2P  
+crypto
+
+ is a growing list of records, called blocks, that are linked using cryptography.[1][6] Each block contains a cryptographic hash of the previous block,[6] a timestamp, and transaction data (generally represented as a Merkle tree).
+
+
+#### Decentralized vs distributed: 
+
+#### Block:  
+
+
+
+#### Mining:   
+
 #### Nonce:
 Arbitrary number than can be used only once.
 
@@ -34,7 +55,7 @@ What it is: it's usually written in Solidity.
 ++++ https://medium.com/@julianrmartinez43/understanding-proof-of-work-part-1-586d7ee6b014
 ++++ https://lisk.io/academy/blockchain-basics/how-does-blockchain-work/proof-of-work 
 +++ https://cointelegraph.com/explained/proof-of-work-explained
-https://blog.goodaudience.com/how-a-miner-adds-transactions-to-the-blockchain-in-seven-steps-856053271476#92ef
++++ https://blog.goodaudience.com/how-a-miner-adds-transactions-to-the-blockchain-in-seven-steps-856053271476#92ef
 
 ------- 
 
