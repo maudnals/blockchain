@@ -1,7 +1,7 @@
-### Nonce:
+#### Nonce:
 Arbitrary number than can be used only once.
 
-### Proof Of Work:
+#### Proof Of Work:
 Blockchain is a decentralized database, so it needs to be secured by incentivizing participants in the network.
 
 This means:
@@ -21,15 +21,13 @@ A miner:
 
 // to be continued
 
-### Consensus algorithm: 
+#### Consensus algorithm: 
 A process in computer science, used to achieve agreement on a single data value among distributed systems.
 
-### Smart contracts:
-A smart contract is a piece of code that:
-- executes the business logic of a dApp
-- aka is responsible for reading and writing data to the blockchain
-How: it's executed by the Ethereum Virtual Machine (EVM).
-What: it's usually written in Solidity. 
+#### Smart contract:
+A smart contract is a piece of code that executes the business logic of a dApp ; aka is responsible for reading and writing data to the blockchain.
+How it runs: it's executed by the Ethereum Virtual Machine (EVM).
+What it is: it's usually written in Solidity. 
 
 ### Sources
 
@@ -47,7 +45,6 @@ general:
 - block content - what's inside exactly
 - token vs coin
 - where does the money come from? "generated"
-
 
 dApps:
 - why are dapps mostly presented in the context of ethereum?
