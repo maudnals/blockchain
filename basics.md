@@ -1,7 +1,12 @@
 #### Blockchain:
 A blockchain is a decentralized, immutable database.   
 
- is a growing list of records, called blocks, that are linked using cryptography.[1][6] Each block contains a cryptographic hash of the previous block,[6] a timestamp, and transaction data (generally represented as a Merkle tree).
+A blockchain's records are called blocks. 
+They're linked using cryptography.  
+Each block contains:  
+* a cryptographic hash of the previous block  
+* a timestamp  
+* transaction data (generally represented as a Merkle tree).
  
  
 decentralized  
