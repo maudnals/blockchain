@@ -67,12 +67,14 @@ What it is: it's usually written in Solidity.
 
 A cryptographic system that uses pairs of keys:
 
-- public keys which may be disseminated widely
-- private keys which are known only to the owner.
+- **public** keys which may be disseminated widely
+- **private** keys which are known only to the owner.
 
 Any person (sender) can encrypt a message using the receiver's public key. But that encrypted message can only be decrypted with the receiver's private key.
 
-The keys are simply two large numbers that are mathematically related but different.
+The keys are simply two large numbers that are mathematically related but different. 
+
+
 
 ### Sources
 
