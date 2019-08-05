@@ -72,9 +72,9 @@ A cryptographic system that uses pairs of keys:
 
 Any person (sender) can encrypt a message using the receiver's public key. But that encrypted message can only be decrypted with the receiver's private key.
 
-The keys are simply two large numbers that are mathematically related but different. 
+The keys are simply two large numbers that are mathematically related but different.
 
-
+![alt text](https://lisk.io/content/5-academy/2-blockchain-basics/4-how-does-blockchain-work/2-blockchain-cryptography-explained/6-public-key-cryptography-1.jpg "Logo Title Text 1")
 
 ### Sources
 
