@@ -1,17 +1,18 @@
 #### Blockchain:
-A blockchain is a decentralized, immutable database.   
- 
+A blockchain is a decentralized, immutable database.
+
 decentralized  
 P2P  
 crypto
 
 
 #### Decentralized vs distributed: 
+Decentralized is a subcategory of distributed.
 
 #### Block:  
-A blockchain's records are called blocks. 
-They're linked using cryptography.  
-Each block contains:  
+A blockchain's records are called blocks.   
+They're linked using cryptography.   
+Each block contains:   
 * a cryptographic hash of the previous block  
 * a timestamp  
 * transaction data (generally represented as a Merkle tree).
