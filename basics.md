@@ -11,6 +11,19 @@ Core concepts:
 
 A decentralized system is a subset of a distributed system. Decentralized means that there is no single point where the decision is made.
 
+#### Node:
+
+Nodes can be any kind of device: laptop, computer, big server...  
+Nodes form the infrastructure of a blockchain. All nodes on a blockchain are connected to each other, and they constantly exchange the latest blockchain data with each other so all nodes stay up to date.
+
+Full node:  
+A node that contains a full copy of the transaction history of the blockchain.  
+It can validate new transactions.
+
+Miner:
+A node that creates new blocks.  
+Usually is a full node.
+
 #### Block:
 
 A blockchain's records are called blocks.  
@@ -89,7 +102,30 @@ A key generation algorithm, providing a private and public key.
 A signing algorithm that combines data and private key to make a signature.
 An algorithm that verifies signatures and determines whether the message is authentic or not based on the message, the public key and signature.
 
-### Sources
+#### Web3:
+
+- web2: the web of interactivity and social media
+- web3: the decentralized, pro-privacy, pro-transparency, anti-monopoly web. Rather than concentrating the power (and data) in the hands of huge companies with questionable motives, it would be returned the rightful owners.
+
+Advantages:
+
+- No central point of control: Middlemen are removed from the equation. Blockchains provide a trustless platform where the rules are unbreakable and data is fully encrypted. Alphabet and Apple will no longer have control of user data. No government or entity will have the ability to kill sites and services; and no single individual can control the identities of others.
+- Ownership of data: End users will regain complete control of data and have the security of encryption. Information can then be shared on a case-by-case and permissioned basis. No more big companies like Amazon and Facebook will store dietary preferences, income, credit card details to sell them to marketers and advertisers.
+- Reduction in hacks and data breaches: Because data will be decentralized and distributed, hackers would need to turn off the entire network, while state-sponsored tools such as Vault7, used by the three-letter agencies, would be rendered obsolete. At present, internet companies are compelled to hand over user data or succumb to having the entire database scrutinized. These data intrusions aren’t just limited to major security threats such as terrorism; in 2017, Coinbase took the IRS to court over its demand to see the data of over 15,000 customers.
+
+#### Seed:
+
+= seed phrase = seed recovery phrase = backup seed phrase is a list of words which store all the information needed to recover a wallet.
+
+- Each word assigned to a number.
+- The seed phrase can be converted to a number.
+- This number is used as the seed integer to generate all the key pairs used in the wallet (deterministic wallet).
+
+The English-language wordlist for the BIP39 standard has 2048 words. So if the phrase contained only 12 random words, the number of possible combinations would be 2048^12 = 2^132 and the phrase would have 132 bits of security. However, some of the data in a BIP39 phrase is not random so the actual security of a 12-word BIP39 seed phrase is only 128 bits. This is approximately the same strength as all Bitcoin private keys, so most experts consider it to be sufficiently secure.
+
+It is not safe to invent your own seed phrase because humans are bad at generating randomness. The best way is to allow the wallet software to generate a phrase which you write down.
+
+#### Sources:
 
 ++++ https://medium.com/@julianrmartinez43/understanding-proof-of-work-part-1-586d7ee6b014
 ++++ https://lisk.io/academy/blockchain-basics/how-does-blockchain-work/proof-of-work
@@ -97,3 +133,5 @@ An algorithm that verifies signatures and determines whether the message is auth
 +++ https://blog.goodaudience.com/how-a-miner-adds-transactions-to-the-blockchain-in-seven-steps-856053271476#92ef
 
 https://lisk.io/academy/blockchain-basics/how-does-blockchain-work/blockchain-cryptography-explained
+
+https://medium.com/@matteozago/why-the-web-3-0-matters-and-you-should-know-about-it-a5851d63c949
