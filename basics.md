@@ -57,7 +57,7 @@ Arbitrary number than can be used only once.
 
 #### Byzantine fault tolerance:
 
-https://lisk.io/academy/blockchain-basics/how-does-blockchain-work/byzantine-fault-tolerance-explained
+See https://lisk.io/academy/blockchain-basics/how-does-blockchain-work/byzantine-fault-tolerance-explained
 
 #### Proof Of Work:
 
