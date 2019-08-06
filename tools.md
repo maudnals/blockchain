@@ -17,7 +17,7 @@ _°Dapp: distributed application_
 
 #### Solidity:
 
-Solidity code is compoled to Bytecode for EVM (Ethereum Virtual Machine).
+Solidity code is compiled to Bytecode for EVM (Ethereum Virtual Machine).
 
 #### Truffle:
 
