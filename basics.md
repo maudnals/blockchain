@@ -7,6 +7,10 @@ Core concepts:
 - P2P
 - crypto
 
+#### Runtime (in the context of blockchain):
+
+Your chain’s task, aka business logic, aka state transition function.
+
 #### Token vs coin:
 
 A crypto coin is just that: a coin, or means of payment. It stores value over time and enable businesses to account and pay for services.  
@@ -152,6 +156,26 @@ Advantages:
 The English-language wordlist for the BIP39 standard has 2048 words. So if the phrase contained only 12 random words, the number of possible combinations would be 2048^12 = 2^132 and the phrase would have 132 bits of security. However, some of the data in a BIP39 phrase is not random so the actual security of a 12-word BIP39 seed phrase is only 128 bits. This is approximately the same strength as all Bitcoin private keys, so most experts consider it to be sufficiently secure.
 
 It is not safe to invent your own seed phrase because humans are bad at generating randomness. The best way is to allow the wallet software to generate a phrase which you write down.
+
+#### Ethereum
+
+An open source platform that enables developers to build and deploy decentralised applications. 2013, Vitalik Buterin.
+
+#### Bitcoin
+
+#### Hyperledger
+
+Hyperledger doesn’t refer to a specific technology, but rather it is a Linux Foundation banner project for multiple blockchain and DLT technologies which support the collaborative development of blockchain-based distributed ledgers. each of which have slightly different characteristics. These frameworks include:
+
+Hyperledger Fabric
+Hyperledger Burrow
+...
+
+Hyperledger Fabric is a permissioned blockchain infrastructure providing a modular architecture with a delineation of roles between the nodes in the infrastructure, execution of Smart Contracts and configurable consensus and membership services.
+
+#### Hyperledger vs. Ethereum
+
+Ethereum and Hyperledger is the way they are designed and their target audience. Ethereum with it's EVM, smart contract and public blockchain is mostly targeted towards applications that are distributed in nature. On the other hand, Fabric has a very modular architecture and provides a lot of flexibility in terms of what you want to use and what you don't. It's pretty much a la carte and is targeted at businesses wanting to streamline their process by leveraging blockchain technology. For example, it is not possible in Ethereum to have a transaction visible to someone, but not visible to others (a requirement that is very common in business). Fabric allows this and much more.
 
 #### Sources:
 
