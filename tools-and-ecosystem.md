@@ -1,6 +1,29 @@
+#### Ethereum
+
+An open source platform that enables developers to build and deploy decentralised applications. 2013, Vitalik Buterin.
+
+#### Bitcoin
+
+#### Hyperledger
+
+Hyperledger doesn’t refer to a specific technology, but rather it is a Linux Foundation banner project for multiple blockchain and DLT technologies which support the collaborative development of blockchain-based distributed ledgers. each of which have slightly different characteristics. These frameworks include:
+
+Hyperledger Fabric
+Hyperledger Burrow
+...
+
+Hyperledger Fabric is a permissioned blockchain infrastructure providing a modular architecture with a delineation of roles between the nodes in the infrastructure, execution of Smart Contracts and configurable consensus and membership services.
+
+#### Hyperledger vs. Ethereum
+
+Ethereum and Hyperledger is the way they are designed and their target audience. Ethereum with it's EVM, smart contract and public blockchain is mostly targeted towards applications that are distributed in nature. On the other hand, Fabric has a very modular architecture and provides a lot of flexibility in terms of what you want to use and what you don't. It's pretty much a la carte and is targeted at businesses wanting to streamline their process by leveraging blockchain technology. For example, it is not possible in Ethereum to have a transaction visible to someone, but not visible to others (a requirement that is very common in business). Fabric allows this and much more.
+
 #### Truffle
 
-Tooling suite for smart contracts.
+Tooling suite for smart contracts.  
+`truffle migrate` to migrate the contracts onto the (local) blockchain.
+`truffle console` to open the truffle console and explore the (local) blockchain.
+`truffle migrate --reset` to all your migrations from the beginning.
 
 #### Ganache
 
@@ -18,12 +41,6 @@ _°Dapp: distributed application_
 #### Solidity:
 
 Solidity code is compiled to Bytecode for EVM (Ethereum Virtual Machine).
-
-#### Truffle:
-
-`truffle migrate` to migrate the contracts onto the (local) blockchain.
-`truffle console` to open the truffle console and explore the (local) blockchain.
-`truffle migrate --reset` to all your migrations from the beginning.
 
 #### Substrate:
 
