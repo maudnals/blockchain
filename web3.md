@@ -10,4 +10,11 @@ Advantages:
 - Reduction in hacks and data breaches: Because data will be decentralized and distributed, hackers would need to turn off the entire network, while state-sponsored tools such as Vault7, used by the three-letter agencies, would be rendered obsolete. At present, internet companies are compelled to hand over user data or succumb to having the entire database scrutinized. These data intrusions aren’t just limited to major security threats such as terrorism; in 2017, Coinbase took the IRS to court over its demand to see the data of over 15,000 customers.
 
 Note:  
-Eventually the web will become web3 and the backend details will be abstracted away from the user.
+Eventually the web will become web3 and the backend details will be abstracted away from the user.   
+
+#### dApp:
+classical web app:
+![](http://www.dappuniversity.com/web_application_diagram.png "Normal app") 
+dApp: Instead of having a network, a central server, and a database, the blockchain is a network and a database all in one.
+![](http://www.dappuniversity.com/dapp_diagram.png "dApp")  
+
