@@ -117,3 +117,7 @@ It is not safe to invent your own seed phrase because humans are bad at generati
 ![](http://www.dappuniversity.com/dapp_diagram.png "dApp")
 
 dApp: Instead of having a network, a central server, and a database, the blockchain is a network and a database all in one.
+
+#### Byzantine fault tolerance:
+Also see:
+https://medium.com/loom-network/understanding-blockchain-fundamentals-part-1-byzantine-fault-tolerance-245f46fe8419
