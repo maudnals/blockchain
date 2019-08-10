@@ -22,3 +22,19 @@ Data types supported in JSON:
 
 https://json-schema.org/understanding-json-schema/about.html#about
 https://json-schema.org/understanding-json-schema/reference/index.html
+
+#### Identity (extends PublicIdentity):
+
+- Can be built from a URI such as `//Alice`
+
+NB: In cryptography, a keyring stores known encryption keys. Keyring from Polkadot does key management of user accounts, including generation and retrieval of keyring pairs.  
+Ed25519 is the most recommended public-key algorithm available today.
+
+#### CType properties:
+
+- `owner` = owner's public address string (as ss58 public address) = owner's public key = Address of the owner identity
+- Is it the same as public signature? "The owner's hash is their public signature" as stated in the whitepaper???
+
+#### Claim:
+
+- The owner should be the claimer: this will be checked in the validation
