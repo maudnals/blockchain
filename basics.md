@@ -63,7 +63,8 @@ Arbitrary number than can be used only once.
 
 #### Byzantine fault tolerance:
 
-See https://lisk.io/academy/blockchain-basics/how-does-blockchain-work/byzantine-fault-tolerance-explained
+See https://lisk.io/academy/blockchain-basics/how-does-blockchain-work/byzantine-fault-tolerance-explained  
+and https://medium.com/loom-network/understanding-blockchain-fundamentals-part-1-byzantine-fault-tolerance-245f46fe8419
 
 #### Proof Of Work:
 
@@ -111,12 +112,3 @@ The English-language wordlist for the BIP39 standard has 2048 words. So if the p
 
 It is not safe to invent your own seed phrase because humans are bad at generating randomness. The best way is to allow the wallet software to generate a phrase which you write down.
 
-#### dApp:
-classical web app:
-![](http://www.dappuniversity.com/web_application_diagram.png "Normal app") 
-dApp: Instead of having a network, a central server, and a database, the blockchain is a network and a database all in one.
-![](http://www.dappuniversity.com/dapp_diagram.png "dApp")  
-
-#### Byzantine fault tolerance:
-Also see:
-https://medium.com/loom-network/understanding-blockchain-fundamentals-part-1-byzantine-fault-tolerance-245f46fe8419
