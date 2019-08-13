@@ -44,15 +44,17 @@ Solidity code is compiled to Bytecode for EVM (Ethereum Virtual Machine).
 
 #### Substrate:
 
-A modular toolbox to create blockchain.
+A toolbox to create your own blockchain in a modular way.
+
+Substrate:
+
+- give technical freedom
+- make functionalities like accounts, balances, governance, and smart contracts as easy as plugging in a library.
 
 - open-source
+- forkless runtime upgrade
   It has a 100% abstract “execute block” function encoded in WebAssembly that can be targeted from any one of a number of languages, including C++ and Rust. The execute block function is hot-swappable, meaning you can upgrade your chain’s logic without a hard fork.  
    NB: Substrate 1.0 Beta provides a combined Aura/GRANDPA consensus, with more consensus algorithms to be provided in subsequent releases. Down the road, consensus will be hot-swappable.
-
-Substrate was created in a modular way to give technical freedom but also make functionalities like accounts, balances, governance, and smart contracts as easy as plugging in a library.
-
-forkless runtime upgrade
 
 Parity Substrate is a blockchain development framework with many cool features like upgradable blockchains, modular architecture, customizable block execution logic, and hot-swappable consensus.
 

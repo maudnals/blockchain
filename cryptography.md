@@ -24,4 +24,9 @@ Digital signatures are unique to the signer and are created by utilising three a
 
 A key generation algorithm, providing a private and public key.
 A signing algorithm that combines data and private key to make a signature.
-An algorithm that verifies signatures and determines whether the message is authentic or not based on the message, the public key and signature.
+An algorithm that verifies signatures and determines whether the message is authentic or not based on the message, the public key and signature. 
+
+
+#### More crypto links:  
+* Very complete book: https://www.garykessler.net/library/crypto.html
+* Overview about checksums and hashes https://store.chipkin.com/articles/blockchain-checksums-and-hashes-the-roots-of-blockchains-
