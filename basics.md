@@ -31,7 +31,9 @@ A decentralized system is a subset of a distributed system. Decentralized means 
 #### Node:
 
 Nodes can be any kind of device: laptop, computer, big server...  
-Nodes form the infrastructure of a blockchain. All nodes on a blockchain are connected to each other, and they constantly exchange the latest blockchain data with each other so all nodes stay up to date.
+Nodes form the infrastructure of a blockchain. All nodes on a blockchain are connected to each other, and they constantly exchange the latest blockchain data with each other so all nodes stay up to date.   
+
+Unlike mining, there is no financial incentive for running a node.
 
 Full node:  
 A node that contains a full copy of the transaction history of the blockchain.  
@@ -39,7 +41,10 @@ It can validate new transactions.
 
 Miner:
 A node that creates new blocks.  
-Usually, is also a full node.
+Usually, is also a full node.  
+
+Sources:  
+https://blog.kaiko.com/an-in-depth-guide-into-how-the-mempool-works-c758b781c608
 
 #### Block:
 

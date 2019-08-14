@@ -2,7 +2,10 @@
 
 An open source platform that enables developers to build and deploy decentralised applications. 2013, Vitalik Buterin.
 
-#### Bitcoin
+#### Bitcoin 
+
+Open source P2P money. Permissionless.
+
 
 #### Hyperledger
 
