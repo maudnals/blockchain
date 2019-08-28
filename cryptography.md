@@ -1,3 +1,26 @@
+In blockchain, cryptography is for 2 main purposes:   
+* Securing the identity of the sender of transactions // see how blockchain wallets use public-key encryption
+* Ensuring the past records cannot be tampered with (= are immutable) // see how every new block of data contains a cryptographic hash of the previous block, and how Merkle trees store transactions
+
+Additionally, cryptography is used to:
+* make blockchains more efficient // see Simplified Payment Verification, a Merkle tree can be efficiently traverseed to check if a certain transaction has been hashed
+
+Source:  
++++++ https://crushcrypto.com/cryptography-in-blockchain/  
+https://lisk.io/academy/blockchain-basics/how-does-blockchain-work/blockchain-cryptography-explained   
+
+#### Cipher: 
+An algorithm for performing encryption or decryption.
+
+#### Encoded !== encrypted  
+**Encoding**: Transforming data so that it can be consumed by a different system (**usability**). Ex: ascii, unicode, URL Encoding, base64.   
+**Encrypting**: Transforming data in order to keep it **secret** from others. Ex: aes, blowfish, rsa     
+**Hashing**: Taking an arbitrary input and produce a fixed-length string, to enseure **integrity**. Ex: SHA256   
+
+Source:    
+https://danielmiessler.com/study/encoding-encryption-hashing-obfuscation/
+
+
 #### Asymmetric cryptography:
 
 = public-key cryptography
@@ -22,10 +45,30 @@ A digital signature is trustworthy and tamperproof:
 
 Digital signatures are unique to the signer and are created by utilising three algorithms:
 
-A key generation algorithm, providing a private and public key.
-A signing algorithm that combines data and private key to make a signature.
-An algorithm that verifies signatures and determines whether the message is authentic or not based on the message, the public key and signature. 
+* A key generation algorithm, providing a private and public key.
+* A signing algorithm that combines data and private key to make a signature.
+* An algorithm that verifies signatures and determines whether the message is authentic or not based on the message, the public key and signature.  
 
+
+#### Nonce:
+
+Arbitrary number than can be used only once.
+
+#### Seed:
+
+= seed phrase = seed recovery phrase = backup seed phrase is a list of words which store all the information needed to recover a wallet.
+
+- Each word assigned to a number.
+- The seed phrase can be converted to a number.
+- This number is used as the seed integer to generate all the key pairs used in the wallet (deterministic wallet).
+
+The English-language wordlist for the BIP39 standard has 2048 words. So if the phrase contained only 12 random words, the number of possible combinations would be 2048^12 = 2^132 and the phrase would have 132 bits of security. However, some of the data in a BIP39 phrase is not random so the actual security of a 12-word BIP39 seed phrase is only 128 bits. This is approximately the same strength as all Bitcoin private keys, so most experts consider it to be sufficiently secure.
+
+It is not safe to invent your own seed phrase because humans are bad at generating randomness. The best way is to allow the wallet software to generate a phrase which you write down.
+
+
+#### Sources:  
++++++ https://crushcrypto.com/cryptography-in-blockchain/
 
 #### More crypto links:  
 * Very complete book: https://www.garykessler.net/library/crypto.html

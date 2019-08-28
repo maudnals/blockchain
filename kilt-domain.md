@@ -6,7 +6,7 @@ https://medium.com/@tokencuratedregistry/a-simple-overview-of-token-curated-regi
 - the tradeoff doc shared on the slack channel
 - TCR tutorial by Substrate
 
-#### Decentralized Identities DID:
+#### Decentralized Identifiers DID:
 
 https://medium.com/@adam_14796/understanding-decentralized-ids-dids-839798b91809  
 https://w3c-ccg.github.io/did-primer/

@@ -13,7 +13,7 @@ Note:
 Eventually the web will become web3 and the backend details will be abstracted away from the user.   
 
 #### dApp:
-classical web app:
+Classical web app:
 ![](http://www.dappuniversity.com/web_application_diagram.png "Normal app") 
 dApp: Instead of having a network, a central server, and a database, the blockchain is a network and a database all in one.
 ![](http://www.dappuniversity.com/dapp_diagram.png "dApp")  
