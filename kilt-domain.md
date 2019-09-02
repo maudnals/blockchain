@@ -6,7 +6,22 @@ https://medium.com/@tokencuratedregistry/a-simple-overview-of-token-curated-regi
 - the tradeoff doc shared on the slack channel
 - TCR tutorial by Substrate
 
-#### Decentralized Identifiers DID:
+#### Decentralized Identifiers DID: 
+
+DIDs are identifiers that users can use to identify themselves.   
+Mostly blockchain-based.   
+A DID is two things: 
+- A unique identifier (`did:method:123456789abcdefghi`): the unique ID to look up a DID document
+  and
+- An associated DID Document (JSON-LD): a document that's persistent, immutable, stored in some central location, that includes a list of services the DID can be used with 
+
+
+NB: DIDs are good use cases for blockchains  
 
 https://medium.com/@adam_14796/understanding-decentralized-ids-dids-839798b91809  
-https://w3c-ccg.github.io/did-primer/
+https://w3c-ccg.github.io/did-primer/ 
+
+
+#### Identity vs right to access:  
+Snowden warned about this suring web3summit 2019: identity and right to access should be separated.    
+See 3box approach.
