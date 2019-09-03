@@ -14,9 +14,9 @@ Mostly blockchain-based.
 
 A DID is two things:
 
-- A unique identifier (`did:method:123456789abcdefghi`): the unique ID to look up a DID document
+- A unique **identifier** (`did:method:123456789abcdefghi`): the unique ID to look up a DID document. It's registered on a **blockchain**.
   and
-- An associated DID Document (JSON-LD): a document that's persistent, immutable, stored in some central location. It includes a list of services the DID can be used with, together with their endpoints and an enc+pub key.
+- An associated **DID Document** (JSON-LD): a document that's persistent, immutable. It includes a list of services the DID can be used with, together with their endpoints and an enc+pub key. It's **stored in a central location**.
 
 NB:
 
