@@ -5,7 +5,7 @@
 DIDs are identifiers that users can use to **identify themselves**.
 Mostly blockchain-based.
 
-## 1. Def
+## 0. Def
 A Decentralized Identifier (DID) is a new type of identifier that is:
 
 * globally **unique**;
@@ -17,7 +17,7 @@ A Decentralized Identifier (DID) is a new type of identifier that is:
 DIDs are typically associated with cryptographic material (such as public keys and service endpoints) for establishing **secure communication channels**.
 Src: w3c
 
-## 0. Problem, vision & use cases
+## 1. Problem, vision & use cases
 
 At a superficial level: a DID is simply a new type of identifier.
 
@@ -49,15 +49,15 @@ More generally, DIDs can be used as identifiers for people, devices and organisa
 Src: w3c
 
 
-## 3. Details
+## 2. Details
 
-### 3.1 DID-Blockchain link
+### 2.1 DID-Blockchain link
 
 DIDs are good use cases for blockchains.
 
 Src: IR
 
-### 3.2 DID dive-in
+### 2.2 DID dive-in
 
 DID infrastructure can be thought of as a global key-value database.
 The database is all DID-compatible blockchains, distributed ledgers, or decentralized networks. In this virtual database, the key is a DID. The value is a DID document that describes the public keys, authentication protocols, and service endpoints necessary to bootstrap cryptographically-verifiable interactions with the identified entity.
@@ -72,27 +72,27 @@ and
 
 Src: medium
 
-### 3.3 DID document
+### 2.3 DID document
 
 +++++++++++++++ Where stored?
 +++++++++++++++ What is JSON LD
 
-### 3.4 Resolving DIDs
+### 2.4 Resolving DIDs
 
 
 
-## 4. Discussions + pros/cons
+## 3. Discussions + pros/cons
 
-### 4.1 Identity vs identifiers
+### 3.1 Identity vs identifiers
 
-Snowden warned about this suring web3summit 2019: identity and right to access should be separated.
-
+Snowden warned about this suring web3summit 2019: identity and **right to access** should be separated.
 See 3box approach.
-
-
 https://twitter.com/lrettig/status/1163784989626052608?s=19
 
-+ Use of pseudonyms
+Also see: use of pseudonyms
+
+### 3.2 Misc pros/cons
+See https://medium.com/@adam_14796/understanding-decentralized-ids-dids-839798b91809
 
 ## Sources
 
