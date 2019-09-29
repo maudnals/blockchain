@@ -81,7 +81,8 @@ Each node has its own mempool, and they vary in size (transaction size, hardware
 
 Unit of the mempool size: unit of memory aka megabyte (MB). 
 
-When the node memory gets full:    
+When the node memory gets full: 
+   
 Unlike mining, there is no financial incentive for running a node. Therefore, the hardware dedicated to it tends to be limited and so a node’s mempool often max out its RAM.    
 If the mempool size gets too close to the RAM capacity, the node sets up a minimal fee threshold. Transactions with fees per kB lower than this threshold are immediately removed from the Mempool and only new transactions with a fee per kB large enough are not allowed access to the Mempool.   
 

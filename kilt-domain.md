@@ -14,15 +14,24 @@ Mostly blockchain-based.
 
 A DID is two things:
 
-- A unique **identifier** (`did:method:123456789abcdefghi`): the unique ID to look up a DID document. It's registered on a **blockchain**.
+- A unique **identifier** (`did:method:123456789abcdefghi`): the unique ID to look up a DID document. 
   and
-- An associated **DID Document** (JSON-LD): a document that's persistent, immutable. It includes a list of services the DID can be used with, together with their endpoints and an enc+pub key. It's **stored in a central location**.
+- An associated **DID Document** (JSON-LD object): a document that's persistent, immutable. It includes a list of services the DID can be used with, together with their endpoints and an enc+pub key. It's **stored in a central location**.
 
 NB:
 
 - DIDs are good use cases for blockchains
 - With DIDs we can do something we've never done before: we can identify things and persons in a secure way, aka emails cannot be forged anymore!
 endpoint keys
+
+Zoom on the DID identifier:
+
+- `method`: defines how / where you are going to find the DID. Currently there are 9 registered methods which are all blockchains / distributed ledger technologies.
+
+
+- It's registered on a **distributed ledger**.?????? is it? what is stored where?
+- 
+How DIDs are used:
 
 
 https://medium.com/@adam_14796/understanding-decentralized-ids-dids-839798b91809  
