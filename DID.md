@@ -66,9 +66,11 @@ Src: w3c.
 
 So a DID is actually two things:
 
-- A unique **identifier** (`did:kilt:123456789abcdefghi`): the unique ID to look up a DID document. It's registered on a **blockchain**.
+- A unique **identifier** (`did:kilt:123456789abcdefghi`): the unique ID to look up a DID document. It's registered on a **blockchain**. The
+DID is expected to be “persistent and immutable” so that it is outside of the influence of
+anyone other than it’s owner.
 and
-- An associated **DID Document** (JSON-LD): a persistent, immutable document. It includes a list of services the DID can be used with, together with their endpoints and an encryption+public key. It's **stored in a central location** to be easily looked up.
+- An associated **DID Document** (JSON-LD). It includes a list of services the DID can be used with, together with their endpoints and an encryption+public key. It's **stored in a central location** to be easily looked up.
 
 Src: medium
 
