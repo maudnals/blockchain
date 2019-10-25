@@ -1,6 +1,61 @@
+#### Encode !== encrypt !== hash
+
+- **Encode**: Transform data so that it can be consumed by a different system (**usability**). Ex: ascii, unicode, URL Encoding, base64.
+- **Encrypt**: Transform data in order to keep it **secret** from others. Ex: aes, blowfish, RSA
+- **Hash**: Take an arbitrary input and produce a fixed-length string, to ensure **integrity**. Ex: SHA256
+
+Source:
+https://danielmiessler.com/study/encoding-encryption-hashing-obfuscation/
+
+#### Encryption vs Signing
+
+Encryption - A message encrypted with someone's public key, can only be decrypted by someone in possession of the matching Private key. **Who was the message really from? No promises there!**
+
+Signing - When someone sees a signed message, they can be sure that the message is unchanged since a person in possession of the matching Private key had their hands on it.
+
+These two acts have very different uses. They are also frequently used together. Encryption of a signed message is very common.
+
+Attention:
+You should NOT use the same keypairs for both signing and encryption!
+Because:
+- Purposes are different. Someone with your private **signing** key could **impersonate** you, so you never want anyone to get hold of it.
+But your workplace might want to escrow (Key escrow is a data security measure in which a cryptographic key is entrusted to a third party i.e. kept in escrow) your private **encryption** key, so that someone else can access your info.
+- Timeframes are different
+You may want a signing key to be valid for a long time so people around the world can check signatures from the past, but with an encryption key, you often want to roll it over sooner, and be able to revoke old ones without as many hassles.
+
+Sources:
+
+- https://security.stackexchange.com/questions/214971/what-is-the-advantage-of-using-a-digital-signature-over-simple-asymmetric-encryp
+- https://security.stackexchange.com/questions/1806/why-should-one-not-use-the-same-asymmetric-key-for-encryption-as-they-do-for-sig 
+- https://www.webopedia.com/TERM/K/key_escrow.html
+
+#### Digital Signature (asymmetric)
+
+To verify a signature, you need the sender's private key
+
+Sources:
+
+- https://blog.mailfence.com/how-do-digital-signatures-work/ ++++
+- https://hedgetrade.com/what-is-a-digital-signature/ +++++
+
+
+
+A digital signature is trustworthy and tamperproof:
+
+- secures the data - the signature is generated based on the data, so if the data is tampered the signature will become invalid
+- secures the identity of the individual sending it - ownership of a digital signature is always bound to a certain user, so one can be sure that they are communicating with whom they intend to.
+
+Digital signatures are unique to the signer and are created by utilising three algorithms:
+
+* A key generation algorithm, providing a private and public key.
+* A signing algorithm that combines data and private key to make a signature.
+* An algorithm that verifies signatures and determines whether the message is authentic or not based on the message, the public key and signature.  
+
+
+
 In blockchain, cryptography is for 2 main purposes:   
-* Securing the identity of the sender of transactions // see how blockchain wallets use public-key encryption
-* Ensuring the past records cannot be tampered with (= are immutable) // see how every new block of data contains a cryptographic hash of the previous block, and how Merkle trees store transactions
+* Securing the **identity** of the sender of transactions // see how blockchain wallets use public-key encryption
+* Ensuring the past records cannot be **tampered** with (= are immutable) // see how every new block of data contains a cryptographic hash of the previous block, and how Merkle trees store transactions
 
 Additionally, cryptography is used to:
 * make blockchains more efficient // see Simplified Payment Verification, a Merkle tree can be efficiently traverseed to check if a certain transaction has been hashed
@@ -9,19 +64,12 @@ Source:
 +++++ https://crushcrypto.com/cryptography-in-blockchain/  
 https://lisk.io/academy/blockchain-basics/how-does-blockchain-work/blockchain-cryptography-explained   
 
-#### Cipher: 
-An algorithm for performing encryption or decryption.
+#### PlainText --- [Cipher] ---> CipherText
 
-#### Encoded !== encrypted  
-**Encoding**: Transforming data so that it can be consumed by a different system (**usability**). Ex: ascii, unicode, URL Encoding, base64.   
-**Encrypting**: Transforming data in order to keep it **secret** from others. Ex: aes, blowfish, rsa     
-**Hashing**: Taking an arbitrary input and produce a fixed-length string, to enseure **integrity**. Ex: SHA256   
+A ciphertext is the result of encryption performed on plaintext using an algorithm, called a cipher.
+Cipher: an algorithm for performing **encryption** or **decryption**.
 
-Source:    
-https://danielmiessler.com/study/encoding-encryption-hashing-obfuscation/
-
-
-#### Asymmetric cryptography:
+#### Asymmetric cryptography
 
 = public-key cryptography
 
@@ -36,25 +84,12 @@ The keys are simply two large numbers that are mathematically related but differ
 
 ![](https://lisk.io/content/5-academy/2-blockchain-basics/4-how-does-blockchain-work/2-blockchain-cryptography-explained/6-public-key-cryptography-1.jpg "PKC")
 
-#### Digital signature:
 
-A digital signature is trustworthy and tamperproof:
-
-- secures the data - the signature is generated based on the data, so if the data is tampered the signature will become invalid
-- secures the identity of the individual sending it - ownership of a digital signature is always bound to a certain user, so one can be sure that they are communicating with whom they intend to.
-
-Digital signatures are unique to the signer and are created by utilising three algorithms:
-
-* A key generation algorithm, providing a private and public key.
-* A signing algorithm that combines data and private key to make a signature.
-* An algorithm that verifies signatures and determines whether the message is authentic or not based on the message, the public key and signature.  
-
-
-#### Nonce:
+#### Nonce
 
 Arbitrary number than can be used only once.
 
-#### Seed:
+#### Seed
 
 = seed phrase = seed recovery phrase = backup seed phrase is a list of words which store all the information needed to recover a wallet.
 
