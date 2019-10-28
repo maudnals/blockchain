@@ -36,7 +36,8 @@ A digital signature has 2 purposes:
 - it secures the **data** - the signature is generated based on the data, so if the data is tampered the signature will become invalid
 - it secures the **identity** of the individual sending it - ownership of a digital signature is always bound to a certain user, so one can be sure that they are communicating with whom they intend to.
 
-As such, it is trustworthy and tamperproof.
+As such, it is **trustworthy** and **tamperproof**.
+
 Digital signatures are **unique** to the signer.
 
 
@@ -47,7 +48,7 @@ A digital signature is created by utilising three algorithms:
 * An algorithm that verifies signatures and determines whether the message is authentic or not based on the message, the public key and signature.  
 
 ![unnamed](https://user-images.githubusercontent.com/9762897/67575803-9d8f7100-f73d-11e9-917a-bef21ef1bdbb.jpg)
-To verify a signature, you need the sender's private key.
+To verify a signature, you need the sender's public key.
 
 Sources:
 - https://blog.mailfence.com/how-do-digital-signatures-work/ ++++
