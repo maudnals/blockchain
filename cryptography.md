@@ -1,4 +1,16 @@
-#### Encode !== encrypt !== hash
+## Cryptography in blockchain
+
+In blockchain, cryptography is for 2 main purposes:   
+* Securing the **identity** of the sender of transactions // see how blockchain wallets use public-key encryption
+* Ensuring the past records cannot be **tampered** with (= are immutable) // see how every new block of data contains a cryptographic hash of the previous block, and how Merkle trees store transactions
+
+Additionally, cryptography is used to make blockchains more efficient // see Simplified Payment Verification, a Merkle tree can be efficiently traverseed to check if a certain transaction has been hashed.
+
+Source:  
++++++ https://crushcrypto.com/cryptography-in-blockchain/  
+https://lisk.io/academy/blockchain-basics/how-does-blockchain-work/blockchain-cryptography-explained   
+
+## Encode !== encrypt !== hash
 
 - **Encode**: Transform data so that it can be consumed by a different system (**usability**). Ex: ascii, unicode, URL Encoding, base64.
 - **Encrypt**: Transform data in order to keep it **secret** from others. Ex: aes, blowfish, RSA
@@ -7,7 +19,19 @@
 Source:
 https://danielmiessler.com/study/encoding-encryption-hashing-obfuscation/
 
-#### Encryption vs Signing
+## PlainText --- [Cipher] ---> CipherText
+
+A ciphertext is the result of encryption performed on plaintext using an algorithm, called a cipher.
+Cipher: an algorithm for performing **encryption** or **decryption**.
+
+## Encryption vs Signing
+
+When we think about it, a public key in itself can be used as a method to prove identity (see SSH example below).
+That's why public keys are referred to as "authentication methods".
+And that's why the ppty called authentication only contains public keys.
+(side note: to prove identity aka sign (aka prove trustworthiness), the client uses her private key and then interacts w the server. 
+But to encrypt aka ensure secrecy, the client uses their private key at the end on her side).
+
 
 Encryption - A message encrypted with someone's public key, can only be decrypted by someone in possession of the matching Private key. **Who was the message really from? No promises there!**
 
@@ -17,10 +41,12 @@ These two acts have very different uses. They are also frequently used together.
 
 Attention:
 You should NOT use the same keypairs for both signing and encryption!
+
 Because:
-- Purposes are different. Someone with your private **signing** key could **impersonate** you, so you never want anyone to get hold of it.
+- Purposes (and so attack vectors) are different. Someone with your private **signing** key could **impersonate** you, so you never want anyone to get hold of it.
 But your workplace might want to escrow (Key escrow is a data security measure in which a cryptographic key is entrusted to a third party i.e. kept in escrow) your private **encryption** key, so that someone else can access your info.
-- Timeframes are different
+
+- Timeframes are different.
 You may want a signing key to be valid for a long time so people around the world can check signatures from the past, but with an encryption key, you often want to roll it over sooner, and be able to revoke old ones without as many hassles.
 
 Sources:
@@ -54,25 +80,7 @@ Sources:
 - https://blog.mailfence.com/how-do-digital-signatures-work/ ++++
 - https://hedgetrade.com/what-is-a-digital-signature/ +++++
 
-#### Cryptoraphy in blockchain
-
-In blockchain, cryptography is for 2 main purposes:   
-* Securing the **identity** of the sender of transactions // see how blockchain wallets use public-key encryption
-* Ensuring the past records cannot be **tampered** with (= are immutable) // see how every new block of data contains a cryptographic hash of the previous block, and how Merkle trees store transactions
-
-Additionally, cryptography is used to:
-* make blockchains more efficient // see Simplified Payment Verification, a Merkle tree can be efficiently traverseed to check if a certain transaction has been hashed
-
-Source:  
-+++++ https://crushcrypto.com/cryptography-in-blockchain/  
-https://lisk.io/academy/blockchain-basics/how-does-blockchain-work/blockchain-cryptography-explained   
-
-#### PlainText --- [Cipher] ---> CipherText
-
-A ciphertext is the result of encryption performed on plaintext using an algorithm, called a cipher.
-Cipher: an algorithm for performing **encryption** or **decryption**.
-
-#### Asymmetric cryptography
+## Asymmetric cryptography
 
 = public-key cryptography
 
@@ -88,11 +96,11 @@ The keys are simply two large numbers that are mathematically related but differ
 ![](https://lisk.io/content/5-academy/2-blockchain-basics/4-how-does-blockchain-work/2-blockchain-cryptography-explained/6-public-key-cryptography-1.jpg "PKC")
 
 
-#### Nonce
+## Nonce
 
 Arbitrary number than can be used only once.
 
-#### Seed
+## Seed
 
 = seed phrase = seed recovery phrase = backup seed phrase is a list of words which store all the information needed to recover a wallet.
 
@@ -104,10 +112,9 @@ The English-language wordlist for the BIP39 standard has 2048 words. So if the p
 
 It is not safe to invent your own seed phrase because humans are bad at generating randomness. The best way is to allow the wallet software to generate a phrase which you write down.
 
-
-#### Sources:  
+## Sources:  
 +++++ https://crushcrypto.com/cryptography-in-blockchain/
 
-#### More crypto links:  
+## More crypto links:  
 * Very complete book: https://www.garykessler.net/library/crypto.html
 * Overview about checksums and hashes https://store.chipkin.com/articles/blockchain-checksums-and-hashes-the-roots-of-blockchains-
