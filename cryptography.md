@@ -18,23 +18,23 @@ These two have very different uses; yet they are also frequently used together: 
 
 
 ### Encryption (can be symmetric but here we focus on asymmetric)
-#### Summary
+##### Summary
 Any person (sender) can **ENCRYPT** a message using the receiver's **PUBLIC** key.
 But that encrypted message can only be **DECRYPTED** with the receiver's **PRIVATE** key.
-#### Example
-???????
-#### Goal
+##### Example
+/
+##### Goal
 Secrecy
-#### Threat model and lifespan
+##### Threat model and lifespan
 => Lifespan (relates to threat model):
-#### Diagram:
+##### Diagram:
 
 
 ### Signing (asymmetric)
-#### Summary
-#### Example
+##### Summary
+##### Example
 SSH
-#### Goal
+##### Goal
 Ensures **integrity** and **identity**
 => is **tamperproof** and **trustworthy**. 
 (Details:
@@ -45,10 +45,19 @@ A digital signature has 2 purposes:
 Threat model:
 => Lifespan (relates to threat model):
 
-Diagram:
+Diagrams:
 ![unnamed](https://user-images.githubusercontent.com/9762897/67575803-9d8f7100-f73d-11e9-917a-bef21ef1bdbb.jpg)
+![unnamed](https://www.docusign.com/sites/default/files/ds_subpage_diagram2.svg )
 
-description: 
+
+Description: 
+
+When a signer electronically signs a document, the signature is created using the signer’s private key, which is always securely kept by the signer. The mathematical algorithm acts like a cipher, creating data matching the signed document, called a hash, and encrypting that data. The resulting encrypted data is the digital signature. The signature is also marked with the time that the document was signed. If the document changes after signing, the digital signature is invalidated.
+
+As an example, Jane signs an agreement to sell a timeshare using her private key. The buyer receives the document. The buyer who receives the document also receives a copy of Jane’s public key. If the public key can’t decrypt the signature (via the cipher from which the keys were created), it means the signature isn’t Jane’s, or has been changed since it was signed. The signature is then considered invalid.
+
+To protect the integrity of the signature, PKI requires that the keys be created, conducted, and saved in a secure manner, and often requires the services of a reliable Certificate Authority (CA). Digital signature providers, like DocuSign, meet PKI requirements for safe digital signing.
+
 To verify a signature, you need the sender's **public** key.
 A digital signature is created by utilising three algorithms:
 * A key generation algorithm, providing a private and public key.
