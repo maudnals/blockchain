@@ -28,6 +28,8 @@ Secrecy
 ##### Threat model and lifespan
 => Lifespan (relates to threat model):
 ##### Diagram:
+![unnamed](https://www.tutorialspoint.com/cryptography/images/public_key_cryptography.jpg)
+
 
 
 ### Signing (asymmetric)
