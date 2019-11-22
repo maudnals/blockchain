@@ -14,33 +14,95 @@ Cipher: an algorithm for performing **encryption** or **decryption**.
 
 ## Encryption vs Signing
 
-**Any person (sender) can ENCRYPT a message using the receiver's PUBLIC key.**
+These two have very different uses; yet they are also frequently used together: encryption of a signed message is very common.
 
-**But that encrypted message can only be DECRYPTED with the receiver's PRIVATE key.**
 
+### Encryption (can be symmetric but here we focus on asymmetric)
+#### Summary
+Any person (sender) can **ENCRYPT** a message using the receiver's **PUBLIC** key.
+But that encrypted message can only be **DECRYPTED** with the receiver's **PRIVATE** key.
+#### Example
+???????
+#### Goal
+Secrecy
+#### Threat model and lifespan
+=> Lifespan (relates to threat model):
+#### Diagram:
+
+
+### Signing (asymmetric)
+#### Summary
+#### Example
+SSH
+#### Goal
+Ensures **integrity** and **identity**
+=> is **tamperproof** and **trustworthy**. 
+(Details:
+A digital signature has 2 purposes:
+- it secures the **data** - the signature is generated based on the data, so if the data is tampered the signature will become invalid
+- it secures the **identity** of the individual sending it - ownership of a digital signature is always bound to a certain user, so one can be sure that they are communicating with whom they intend to. Digital signatures are **unique** to the signer.
+)
+Threat model:
+=> Lifespan (relates to threat model):
+
+Diagram:
+![unnamed](https://user-images.githubusercontent.com/9762897/67575803-9d8f7100-f73d-11e9-917a-bef21ef1bdbb.jpg)
+
+description: 
+To verify a signature, you need the sender's **public** key.
+A digital signature is created by utilising three algorithms:
+* A key generation algorithm, providing a private and public key.
+* A signing algorithm that combines data and private key to make a signature.
+* An algorithm that verifies signatures and determines whether the message is authentic or not based on the message, the public key and signature.  
+
+Sources:
+- https://blog.mailfence.com/how-do-digital-signatures-work/ ++++
+- https://hedgetrade.com/what-is-a-digital-signature/ +++++
+
+
+
+
+
+
+
+### Differences:
+Goal is different
+Threat model is different
+Lifespan is different
+
++++++++ Important:
+* To prove identity aka sign (aka prove trustworthiness): the client uses her private key and then interacts w/ the server. 
+* But to encrypt aka ensure secrecy, the client uses their private key at the end on her side.
+
+
+prove identity = sign = prove trustworthiness
+= authenticate?????
+authenticate vs sign vs prove identity
+
+Thought:
 When we think about it, a public key in itself can be used as a method to prove identity (see SSH example below).
 That's why public keys are referred to as "authentication methods".
 And that's why the ppty called authentication only contains public keys.
-
-* To prove identity aka sign (aka prove trustworthiness): the client uses her private key and then interacts w the server. 
-* But to encrypt aka ensure secrecy, the client uses their private key at the end on her side.
-
 
 Encryption - A message encrypted with someone's public key, can only be decrypted by someone in possession of the matching Private key. **Who was the message really from? No promises there!**
 
 Signing - When someone sees a signed message, they can be sure that the message is unchanged since a person in possession of the matching private key had their hands on it.
 
-These two have very different uses; yet they are also frequently used together: encryption of a signed message is very common.
 
-Attention:
+
+### Why Encryption and Signing keypairs should be distinct
+
 You should NOT use the same keypairs for both signing and encryption!
 
-Because:
-- Purposes (and so attack vectors) are different. Someone with your private **signing** key could **impersonate** you, so you never want anyone to get hold of it.
+Because (and as far as I see the reason is not technical):
+
+1. Purposes (and so attack vectors) are different.
+Someone with your private **signing** key could **impersonate** you, so you never want anyone to get hold of it.
 But your workplace might want to escrow (Key escrow is a data security measure in which a cryptographic key is entrusted to a third party i.e. kept in escrow) your private **encryption** key, so that someone else can access your info.
 
-- Timeframes are different.
-You may want a signing key to be valid for a long time so people around the world can check signatures from the past, but with an encryption key, you often want to roll it over sooner, and be able to revoke old ones without as many hassles.
+2. Timeframes are different.
+You may want a signing key to be valid for a long time so people around the world can check signatures from the past.
+But with an encryption key, you often want to roll it over sooner, and be able to revoke old ones without as many hassles.
 
 Sources:
 
@@ -48,30 +110,7 @@ Sources:
 - https://security.stackexchange.com/questions/1806/why-should-one-not-use-the-same-asymmetric-key-for-encryption-as-they-do-for-sig 
 - https://www.webopedia.com/TERM/K/key_escrow.html
 
-#### Digital Signature (asymmetric)
 
-A digital signature has 2 purposes:
-
-- it secures the **data** - the signature is generated based on the data, so if the data is tampered the signature will become invalid
-- it secures the **identity** of the individual sending it - ownership of a digital signature is always bound to a certain user, so one can be sure that they are communicating with whom they intend to.
-
-As such, it is **trustworthy** and **tamperproof**.
-
-Digital signatures are **unique** to the signer.
-
-
-A digital signature is created by utilising three algorithms:
-
-* A key generation algorithm, providing a private and public key.
-* A signing algorithm that combines data and private key to make a signature.
-* An algorithm that verifies signatures and determines whether the message is authentic or not based on the message, the public key and signature.  
-
-![unnamed](https://user-images.githubusercontent.com/9762897/67575803-9d8f7100-f73d-11e9-917a-bef21ef1bdbb.jpg)
-To verify a signature, you need the sender's public key.
-
-Sources:
-- https://blog.mailfence.com/how-do-digital-signatures-work/ ++++
-- https://hedgetrade.com/what-is-a-digital-signature/ +++++
 
 ## Keys in asymmetric cryptography
 
@@ -84,7 +123,6 @@ In one given keypair:
 The keys are simply two large numbers that are mathematically related but different.
 
 ![](https://lisk.io/content/5-academy/2-blockchain-basics/4-how-does-blockchain-work/2-blockchain-cryptography-explained/6-public-key-cryptography-1.jpg "PKC")
-
 
 ## Nonce
 
@@ -113,7 +151,6 @@ Additionally, cryptography is used to make blockchains more efficient // see Sim
 Source:  
 +++++ https://crushcrypto.com/cryptography-in-blockchain/  
 https://lisk.io/academy/blockchain-basics/how-does-blockchain-work/blockchain-cryptography-explained   
-
 
 ## Sources:  
 +++++ https://crushcrypto.com/cryptography-in-blockchain/
