@@ -26,18 +26,23 @@ Cipher: an algorithm for performing **encryption** or **decryption**.
 
 ## Encryption vs Signing
 
+**Any person (sender) can ENCRYPT a message using the receiver's PUBLIC key.**
+
+**But that encrypted message can only be DECRYPTED with the receiver's PRIVATE key.**
+
 When we think about it, a public key in itself can be used as a method to prove identity (see SSH example below).
 That's why public keys are referred to as "authentication methods".
 And that's why the ppty called authentication only contains public keys.
-(side note: to prove identity aka sign (aka prove trustworthiness), the client uses her private key and then interacts w the server. 
-But to encrypt aka ensure secrecy, the client uses their private key at the end on her side).
+
+* To prove identity aka sign (aka prove trustworthiness): the client uses her private key and then interacts w the server. 
+* But to encrypt aka ensure secrecy, the client uses their private key at the end on her side.
 
 
 Encryption - A message encrypted with someone's public key, can only be decrypted by someone in possession of the matching Private key. **Who was the message really from? No promises there!**
 
-Signing - When someone sees a signed message, they can be sure that the message is unchanged since a person in possession of the matching Private key had their hands on it.
+Signing - When someone sees a signed message, they can be sure that the message is unchanged since a person in possession of the matching private key had their hands on it.
 
-These two acts have very different uses. They are also frequently used together. Encryption of a signed message is very common.
+These two have very different uses; yet they are also frequently used together: encryption of a signed message is very common.
 
 Attention:
 You should NOT use the same keypairs for both signing and encryption!
@@ -80,18 +85,13 @@ Sources:
 - https://blog.mailfence.com/how-do-digital-signatures-work/ ++++
 - https://hedgetrade.com/what-is-a-digital-signature/ +++++
 
-## Asymmetric cryptography
+## Keys in asymmetric cryptography
 
-= public-key cryptography
+asymmetric cryptography = public-key cryptography = a cryptographic system that uses pairs of keys.
 
-A cryptographic system that uses pairs of keys:
-
-- **public** keys which may be disseminated widely
-- **private** keys which are known only to the owner.
-
-**Any person (sender) can ENCRYPT a message using the receiver's PUBLIC key.**
-
-**But that encrypted message can only be DECRYPTED with the receiver's PRIVATE key.**
+In one given keypair:
+- **public** key which may be disseminated widely
+- **private** key which is known only to the owner.
 
 The keys are simply two large numbers that are mathematically related but different.
 
