@@ -89,7 +89,9 @@ A cryptographic system that uses pairs of keys:
 - **public** keys which may be disseminated widely
 - **private** keys which are known only to the owner.
 
-Any person (sender) can ENCRYPT a message using the receiver's PUBLIC key. But that encrypted message can only be DECRYPTED with the receiver's PRIVATE key.
+**Any person (sender) can ENCRYPT a message using the receiver's PUBLIC key.**
+
+**But that encrypted message can only be DECRYPTED with the receiver's PRIVATE key.**
 
 The keys are simply two large numbers that are mathematically related but different.
 
