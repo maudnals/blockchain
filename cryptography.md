@@ -88,6 +88,8 @@ prove identity = sign = prove trustworthiness
 = authenticate?????
 authenticate vs sign vs prove identity
 
+is ssh really authentication??
+
 Thought:
 When we think about it, a public key in itself can be used as a method to prove identity (see SSH example below).
 That's why public keys are referred to as "authentication methods".
