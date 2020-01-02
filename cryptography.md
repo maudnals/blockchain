@@ -123,7 +123,9 @@ Sources:
 - https://security.stackexchange.com/questions/1806/why-should-one-not-use-the-same-asymmetric-key-for-encryption-as-they-do-for-sig 
 - https://www.webopedia.com/TERM/K/key_escrow.html
 
+## Zoon on SSH
 
+![](https://pplware.sapo.pt/wp-content/uploads/2017/12/pplware_ssh01.jpg)
 
 ## Keys in asymmetric cryptography
 
